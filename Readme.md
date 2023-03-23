@@ -12,7 +12,6 @@ The rise of microservices lead to increase in the use of container technology. I
 
 ### Kubernetes Terminologies
 
-
 #### Kubernetes Cluster
 It is made up of comntrol plane and nodes.
 
@@ -20,8 +19,8 @@ It is made up of comntrol plane and nodes.
 Used to manage the worker nodes.
 * **Worker Nodes** simple server on a virtual or physical machine.
 
-#### Kubelet
- It is the Kubernetes CLI. It communicates with the control plane either decratively or imperatively.
+#### Kubectl
+ It is the Kubernetes' CLI. It communicates with the control plane either decratively or imperatively.
 
  #### Pod
 This is the smallest unit in Kubernetes. <br>
@@ -31,7 +30,7 @@ It usually runs one application per Pod.<br>
 Each pod gets its own IP address that is used for communication with another Pod.<br>
 Pods are **ephemeral** meaning the can die easily and when that happens a new one will be created and assigned a new IP address on re-creation. This can be detremental since you have to adjust the IP address everytime the Pod restarts.
 
-#### Service and Ingress
+#### Service
 It is a permanent IP address that can be attached to a Pod. <br>
 The lifecycle of a Pod and a Service are not connected hence evades the challenge of adjusting the IP address everytime a Pod restarts.<br>
 **External Service** Opens communication to external sources. An example would be a service created for an application to be accesed through a browser.
@@ -39,6 +38,8 @@ The lifecycle of a Pod and a Service are not connected hence evades the challeng
 
 #### Ingress
 It acts as an entry point to the cluster. A request e.g from the web will go to the Ingress which forwards to the Service.
+
+
 
 
 # Resources Used
