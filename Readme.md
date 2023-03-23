@@ -18,17 +18,17 @@ It is made up of comntrol plane and nodes.
 
 * **Control Plane**
 Used to manage the worker nodes.
-* **Worker Nodes** simple server a virtual or physical machine
+* **Worker Nodes** simple server on a virtual or physical machine.
 
 #### Kubelet
  It is the Kubernetes CLI. It communicates with the control plane either decratively or imperatively.
 
  #### Pod
-This is the smallest unit in Kubernetes. 
-It is an abstraction over container. 
-The pod creates a running environment on top of a container to abstract the container technology run time so that you can replace them if need be and also you don't directly interact with the container since you only interact with the Kubernetes layer.
-It usually runs one application per Pod.
-Each pod gets its own IP address that is used for communication with another Pod
+This is the smallest unit in Kubernetes. <br>
+It is an abstraction over container. <br>
+The pod creates a running environment on top of a container to abstract the container technology run time so that you can replace them if need be and also you don't directly interact with the container since you only interact with the Kubernetes layer.<br>
+It usually runs one application per Pod.<br>
+Each pod gets its own IP address that is used for communication with another Pod.<br>
 Pods are **ephemeral** meaning the can die easily and when that happens a new one will be created and assigned a new IP address on re-creation. This can be detremental since you have to adjust the IP address everytime the Pod restarts.
 
 #### Service and Ingress
