@@ -41,5 +41,11 @@ The lifecycle of a Pod and a Service are not connected hence evades the challeng
 It acts as an entry point to the cluster. A request e.g from the web will go to the Ingress which forwards to the Service.
 
 
+# Resources Used
+[Kubernetes Crash Course for Absolute Beginners [NEW]](https://www.youtube.com/watch?v=s_o8dwzRlu4&t=1s) by 
+TechWorld with Nana
+[Kubernetes Tutorial for Beginners | What is Kubernetes? Architecture Simplified!](https://www.youtube.com/watch?v=KVBON1lA9N8) by 
+Kunal Kushwaha
+[Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
 
