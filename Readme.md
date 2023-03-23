@@ -42,10 +42,10 @@ It acts as an entry point to the cluster. A request e.g from the web will go to 
 
 
 # Resources Used
-[Kubernetes Crash Course for Absolute Beginners [NEW]](https://www.youtube.com/watch?v=s_o8dwzRlu4&t=1s) by 
+1. [Kubernetes Crash Course for Absolute Beginners [NEW]](https://www.youtube.com/watch?v=s_o8dwzRlu4&t=1s) by 
 TechWorld with Nana
-[Kubernetes Tutorial for Beginners | What is Kubernetes? Architecture Simplified!](https://www.youtube.com/watch?v=KVBON1lA9N8) by 
+2. [Kubernetes Tutorial for Beginners | What is Kubernetes? Architecture Simplified!](https://www.youtube.com/watch?v=KVBON1lA9N8) by 
 Kunal Kushwaha
-[Kubernetes Documentation](https://kubernetes.io/docs/home/)
+3. [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
 
