@@ -30,32 +30,39 @@ It usually runs one application per Pod.<br>
 Each pod gets its own IP address that is used for communication with another Pod.<br>
 Pods are **ephemeral** meaning the can die easily and when that happens a new one will be created and assigned a new IP address on re-creation. This can be detremental since you have to adjust the IP address everytime the Pod restarts.
 
-#### Service
+#### Service and Ingress
+**Service**<br>
 It is a permanent IP address that can be attached to a Pod. <br>
 The lifecycle of a Pod and a Service are not connected hence evades the challenge of adjusting the IP address everytime a Pod restarts.<br>
 **External Service** Opens communication to external sources. An example would be a service created for an application to be accesed through a browser.
 **Internal Service**A type of service that you specify when creating one. 
 The service is:
  * Permanent IP
- * Load balancer
+ * Load balancer<br>
 
-#### Ingress
+**Ingress**<br>
 It acts as an entry point to the cluster. A request e.g from the web will go to the Ingress which forwards to the Service.
 
-#### ConfigMaps
-It is your external configuration to your application.<br>
-**It is an API object used to store non-confidential data in key-value pairs** 
+#### ConfigMaps vs Secret
 
-#### Secret
+**ConfigMaps**
+It is your external configuration to your application.<br>
+*It is an API object used to store non-confidential data in key-value pairs* <br>
+
+**Secret**<br>
 It is similar to ConfigMap but used to store confdential data e.g credentials.
 **It is an object that contains a small amount of sensitive data such as a password, a token, or a key.**<br>
 It is not stored in plain text format but base64 encoded format. However, this does not make it automatically secure. The Secret components are meant to be encrypted using third party tools in Kubernetes.
 
 #### Volumes
-This a Kubernetes component that attaches a physical storage on a hard drive to a Pod. The storage could be on a local machine (same server node that the Pod runs) or remote storage (outside the K8s cluster).
-This prevents the loss of data when the dtabase Pod or container gets restarted.
+This a Kubernetes component that attaches a physical storage on a hard drive to a Pod. The storage could be on a local machine (same server node that the Pod runs) or remote storage (outside the K8s cluster).<br>
+This prevents the loss of data when the database Pod or container gets restarted.
 
+#### Deployment and StatefulSet
+**Deployment**
+Layer of abstraction on top of pods which makes it convinient to interact with Pods, replicate them and do some configuration.<br>
 
+**StatefulSets**
 
 
 
