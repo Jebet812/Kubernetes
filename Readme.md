@@ -91,6 +91,7 @@ Kubernetes will check the desired state against the actual state and if it does 
 Hold at anytime the current status of any K8s component. This is where the status information comes from.
 
 #### kube-scheduler
+It is a control plane process which assigns Pods to Nodes.
 
 ### minikube and kubectl
 
@@ -98,7 +99,7 @@ Hold at anytime the current status of any K8s component. This is where the statu
 One node cluster where both the master processes and the worker processes run on one node. 
 It has a Docker container runtime pre-installed.
 
-***Basic Minikube Commands***
+***Basic minikube Commands***
 * ``start``           Starts a local Kubernetes cluster
 * ``status``           Gets the status of a local Kubernetes cluster
 * ``stop``             Stops a running local Kubernetes cluster
