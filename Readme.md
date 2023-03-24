@@ -70,9 +70,6 @@ Just like Deployment it takes care of replicating the Pods and scaling them down
 
 ## Kubernetes Configuration
 
-### Kubectl
- It is the Kubernetes' CLI. It communicates with the control plane either decratively or imperatively.
-
 ### Control Plane Components
 
 #### kube-apiserver
@@ -95,18 +92,24 @@ Hold at anytime the current status of any K8s component. This is where the statu
 
 #### kube-scheduler
 
-## minikube and kubectl
+### minikube and kubectl
 
-### minikube 
+#### minikube 
 One node cluster where both the master processes and the worker processes run on one node. 
 It has a Docker container runtime pre-installed.
 
-### Kubectl
+#### Kubectl
  It is command line tool for Kubernetes cluster.<br>
  It is the Kubernetes' CLI. <br>
- It communicates with the control plane either decratively or imperatively.
  The kubectl submits commands to the API server which triggers the worker processes on the minikube to execute them e.g create pods, destroy pods, create services etc.<br>
  It is not only meant for the minikube cluster but can also be used for a cloud or a hybrid cluster.
+
+
+
+
+
+
+
 
 
 # Resources Used
