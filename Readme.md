@@ -51,7 +51,7 @@ It is your external configuration to your application.<br>
 
 **Secret**<br>
 It is similar to ConfigMap but used to store confdential data e.g credentials.
-**It is an object that contains a small amount of sensitive data such as a password, a token, or a key.**<br>
+*It is an object that contains a small amount of sensitive data such as a password, a token, or a key.*<br>
 It is not stored in plain text format but base64 encoded format. However, this does not make it automatically secure. The Secret components are meant to be encrypted using third party tools in Kubernetes.
 
 #### Volumes
@@ -59,7 +59,7 @@ This a Kubernetes component that attaches a physical storage on a hard drive to 
 This prevents the loss of data when the database Pod or container gets restarted.
 
 #### Deployment and StatefulSet
-**Deployment**
+**Deployment**<br>
 Layer of abstraction on top of pods which makes it convinient to interact with Pods, replicate them and do some configuration.<br>
 
 **StatefulSets**
