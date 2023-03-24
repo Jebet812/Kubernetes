@@ -10,7 +10,7 @@ The rise of microservices lead to increase in the use of container technology. I
 * *High Availability:* Applications are always available to users and there is no down time.
 * *Disaster Recovery:* Incase of a disaster  the infrastructure has a mechanism to pick up the data and restore it to the latest state preventing data loss.
 
-### Kubernetes Terminologies
+### Kubernetes Components
 
 #### Kubernetes Cluster
 It is made up of comntrol plane and nodes.
@@ -35,6 +35,9 @@ It is a permanent IP address that can be attached to a Pod. <br>
 The lifecycle of a Pod and a Service are not connected hence evades the challenge of adjusting the IP address everytime a Pod restarts.<br>
 **External Service** Opens communication to external sources. An example would be a service created for an application to be accesed through a browser.
 **Internal Service**A type of service that you specify when creating one. 
+The service is:
+ * Permanent IP
+ * Load balancer
 
 #### Ingress
 It acts as an entry point to the cluster. A request e.g from the web will go to the Ingress which forwards to the Service.
@@ -47,6 +50,11 @@ It is your external configuration to your application.<br>
 It is similar to ConfigMap but used to store confdential data e.g credentials.
 **It is an object that contains a small amount of sensitive data such as a password, a token, or a key.**<br>
 It is not stored in plain text format but base64 encoded format. However, this does not make it automatically secure. The Secret components are meant to be encrypted using third party tools in Kubernetes.
+
+#### Volumes
+This a Kubernetes component that attaches a physical storage on a hard drive to a Pod. The storage could be on a local machine (same server node that the Pod runs) or remote storage (outside the K8s cluster).
+This prevents the loss of data when the dtabase Pod or container gets restarted.
+
 
 
 
