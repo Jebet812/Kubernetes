@@ -19,9 +19,6 @@ It is made up of comntrol plane and nodes.
 Used to manage the worker nodes.
 * **Worker Nodes** simple server on a virtual or physical machine.
 
-### Kubectl
- It is the Kubernetes' CLI. It communicates with the control plane either decratively or imperatively.
-
 ### Pod
 This is the smallest unit in Kubernetes. <br>
 It is an abstraction over container. <br>
@@ -72,6 +69,12 @@ Just like Deployment it takes care of replicating the Pods and scaling them down
 *Note:* Replicating stateful applications is more difficult compared to stateless applications.
 
 ## Kubernetes Configuration
+
+### Kubectl
+ It is the Kubernetes' CLI. It communicates with the control plane either decratively or imperatively.
+
+### API server
+
 
 
 # Resources Used
