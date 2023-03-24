@@ -98,6 +98,15 @@ Hold at anytime the current status of any K8s component. This is where the statu
 One node cluster where both the master processes and the worker processes run on one node. 
 It has a Docker container runtime pre-installed.
 
+***Basic Minikube Commands***
+  start            Starts a local Kubernetes cluster
+  status           Gets the status of a local Kubernetes cluster
+  stop             Stops a running local Kubernetes cluster
+  delete           Deletes a local Kubernetes cluster
+  dashboard        Access the Kubernetes dashboard running within the minikube cluster
+  pause            pause Kubernetes
+  unpause          unpause Kubernetes
+
 #### Kubectl
  It is command line tool for Kubernetes cluster.<br>
  It is the Kubernetes' CLI. <br>
