@@ -73,8 +73,40 @@ Just like Deployment it takes care of replicating the Pods and scaling them down
 ### Kubectl
  It is the Kubernetes' CLI. It communicates with the control plane either decratively or imperatively.
 
-### API server
+### Control Plane Components
 
+#### kube-apiserver
+Kubernetes clients like API, ui, Kubectl send configuration requests to the API Server. <br>
+It is the main entry point to the Cluster. <br
+The requests could either be in YAML or JSON format.
+
+#### kube-controller-manager
+*It is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state* <br>
+It manages the desired state, current state, checks on changes and makes them where desired.
+
+***Three parts of a configuration file***
+* Metadata
+* Specification
+* Status : automatically generated and added by Kubernetes.<br>
+Kubernetes will check the desired state against the actual state and if it does not match it will try fix it. This is the basis of the self healing feature that Kubernetes provides.
+
+#### etcd
+Hold at anytime the current status of any K8s component. This is where the status information comes from.
+
+#### kube-scheduler
+
+## minikube and kubectl
+
+### minikube 
+One node cluster where both the master processes and the worker processes run on one node. 
+It has a Docker container runtime pre-installed.
+
+### Kubectl
+ It is command line tool for Kubernetes cluster.<br>
+ It is the Kubernetes' CLI. <br>
+ It communicates with the control plane either decratively or imperatively.
+ The kubectl submits commands to the API server which triggers the worker processes on the minikube to execute them e.g create pods, destroy pods, create services etc.<br>
+ It is not only meant for the minikube cluster but can also be used for a cloud or a hybrid cluster.
 
 
 # Resources Used
