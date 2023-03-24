@@ -43,7 +43,7 @@ The service is:
 **Ingress**<br>
 It acts as an entry point to the cluster. A request e.g from the web will go to the Ingress which forwards to the Service.
 
-#### ConfigMaps vs Secret
+#### ConfigMaps and Secret
 
 **ConfigMaps**
 It is your external configuration to your application.<br>
@@ -62,7 +62,15 @@ This prevents the loss of data when the database Pod or container gets restarted
 **Deployment**<br>
 Layer of abstraction on top of pods which makes it convinient to interact with Pods, replicate them and do some configuration.<br>
 
-**StatefulSets**
+**StatefulSet**<br>
+*StatefulSet is the workload API object used to manage stateful applications.*
+StatefulSet like a Deployment manages Pods based on an identical container spec.<br>
+However, they differ in the following ways:
+* StatefulSet maintains a sticky identity for each of its Pods unlike Deployment.
+* StatefulSet are used for stateFUL apps like databases while Deployments are for stateLESS apps.<br>
+Just like Deployment it takes care of replicating the Pods and scaling them down while makin sure the application e.g databases reads and writes are synchronised o ensure there aren't any inconsistencies.
+
+
 
 
 
