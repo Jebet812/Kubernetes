@@ -39,6 +39,15 @@ The lifecycle of a Pod and a Service are not connected hence evades the challeng
 #### Ingress
 It acts as an entry point to the cluster. A request e.g from the web will go to the Ingress which forwards to the Service.
 
+#### ConfigMaps
+It is your external configuration to your application.<br>
+**It is an API object used to store non-confidential data in key-value pairs** 
+
+#### Secret
+It is similar to ConfigMap but used to store confdential data e.g credentials.
+**It is an object that contains a small amount of sensitive data such as a password, a token, or a key.**<br>
+It is not stored in plain text format but base64 encoded format. However, this does not make it automatically secure. The Secret components are meant to be encrypted using third party tools in Kubernetes.
+
 
 
 
